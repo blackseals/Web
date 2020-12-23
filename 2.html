@@ -1,12 +1,22 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>화학공학과 직무-품질관리</title>
 <meta charset="utf-8">
 <style>
+#active {
+  color:blue
+}
+.saw{
+  color:gray
+}
 a {
   color:black;text-decoration: none;
+}
+h1{
+  font-size: 50px; text-align: center;
 }
 </style>
 </head>
@@ -21,12 +31,12 @@ a {
   부품의 신제품을 생산하기 위한 연구과정 및 개발업무를 담당하며,
   전략을 수립하고 기술적 토대를 구축하는 직무이다.</p>
 <ul>
-<li><a href="1.html">생산관리</li></a>
-<li><a href="2.html">품질관리</li></a>
-<li><a href="3.html">연구개발</li></a>
+  <li><a href="1.html" class="saw"><strong>생산관리</strong></li></a>
+  <li><a href="2.html" id="active"><strong>품질관리</strong></li></a>
+  <li><a href="3.html" class="saw"><strong>연구개발</strong></li></a>
 </ul>
 <p><img src="품질관리.jpg" width="500"></p>
-<h2 style="color:red; text-decoration: underline">품질관리</h2>
+<h2 style="color:blue; text-decoration: underline">품질관리</h2>
 <p>품질관리는 품질관리, 품질보증, 품질경영으로 나뉘어져 있는데, 품질관리는 수입검사,
   공정검사, 출하검사 등의 제품검사를 진행한다. 품질보증은 제품 또는 서비스가 주어진
 요구품질을 만족시키고 있다는 적절한 신뢰감을 고객에게 제공하기 위해 필요한 모든 계획적 및
