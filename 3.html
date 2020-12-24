@@ -6,35 +6,72 @@
 <title>화학공학과 직무-연구개발</title>
 <meta charset="utf-8">
 <style>
+#article {
+  padding-top: 35px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
 #active {
   color:green
 }
 .saw{
   color:gray
 }
+p i {
+  font-size: 30px;
+  color: skyblue;
+}
+body {
+  margin:0px
+}
 a {
   color:black;text-decoration: none;
 }
 h1{
   font-size: 50px; text-align: center;
+  border-bottom: gray 1px solid;
+  margin: 0px;
+  padding: 20px;
+}
+ul{
+  border-right: gray 1px solid;
+  width:220px;
+  margin:0px;
+  padding:50px;
+  font-size: 30px;
+}
+@media(max-width: 800px){
+  #grid {
+    display: block;
+  }
+  ul{
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
 }
 </style>
 </head>
 <body>
 <h1><a href="index.html">화학공학과 직무</a></h1>
-<p><a href="https://terms.naver.com/entry.nhn?docId=917926&cid=44346&categoryId=44346" target="_blank" title='화학공학과란?'>화학공학과</a> 직무에는 여러가지가 있겠지만 내가 관심이 있는건
-  <strong><u>생산관리, 품질관리, 연구개발</u></strong> 직무이다. 일단 먼저 생산관리에
+<div id="grid">
+<ul>
+  <li><a href="1.html" class="saw"><strong>생산관리</strong></li></a>
+  <li><a href="2.html" class="saw"><strong>품질관리</strong></li></a>
+  <li><a href="3.html" id="active"><strong>연구개발</strong></li></a>
+</ul>
+<div id="article">
+<p>화학공학과 직무에는 여러가지가 있겠지만 내가 관심이 있는건
+  <i><strong>생산관리, 품질관리, 연구개발</strong></i> 직무이다. 일단 먼저 생산관리에
   대해 먼저 알아보자. 생산관리란 생산계획, 생산성 향상, 원가절감
   생산데이터 등 사무직을 위주로 관리를 하는 직무이다. 품질관리란
   제품의 품질을 유지하고 관리하며 품질요구사항을 파악하고 이를 적용
   하여 신뢰할 수 있는 제품을 만드는 직무이다. 연구개발이란
   부품의 신제품을 생산하기 위한 연구과정 및 개발업무를 담당하며,
   전략을 수립하고 기술적 토대를 구축하는 직무이다.</p>
-<ul>
-  <li><a href="1.html" class="saw"><strong>생산관리</strong></li></a>
-  <li><a href="2.html" class="saw"><strong>품질관리</strong></li></a>
-  <li><a href="3.html" id="active"><strong>연구개발</strong></li></a>
-</ul>
 <img src="연구개발.jpg" width="500">
 <h2 style="color:green; text-decoration: underline">연구개발</h2>
 <p>연구개발은 연구와 개발로 나뉘어져 있는데, 연구는 학문을 바탕으로 과학/지식의 진보를
@@ -45,26 +82,7 @@ h1{
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen></iframe>
 </p>
-<p><div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-7ls78xntj6.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
-  comments powered by Disqus.</a></noscript>
-</p>
+</div>
+</div>
 </body>
 </html>
